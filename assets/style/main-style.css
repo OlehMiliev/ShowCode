@@ -1,0 +1,1610 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6, h7, h8, h8, h9 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+.post, .page {
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero {
+    background-image: url("http://www.amatech.com.ua/wp-content/uploads/2024/02/hero_bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*min-height: 879px;*/
+    min-height: 1150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav_bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.nav_bar .logo {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 173px;
+
+}
+.nav_bar .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.nav_menu li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #241680;
+}
+
+.nav_menu li a:hover {
+    background: linear-gradient(1deg, #E522FF -22.1%, #3219FF 101.05%);
+    background-clip: text;
+    color: transparent;
+}
+
+.nav_menu li:last-child a {
+    background: linear-gradient(355.25deg, #E522FF -22.1%, #3219FF 101.05%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 4px 24px;
+    color: #fff;
+    border-radius: 24px;
+}
+
+#hero {
+    margin-bottom: 100px;
+}
+
+.hero_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_cont_wrapper {
+    max-width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero_main_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 73px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #241680;
+    margin-bottom: 8px;
+    pointer-events: none;
+}
+
+.hero_cont_text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #241680;
+    width: 85%;
+    margin-bottom: 32px;
+    pointer-events: none;
+
+}
+
+
+.contact_popup {
+    background: linear-gradient(355.25deg, #E522FF -22.1%, #3219FF 101.05%);
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    padding: 16px 120px 16px 120px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contact_popup:hover {
+    animation: changeGradient 0.9s 1 alternate forwards;
+}
+
+.custom_form p:nth-child(7) input:hover {
+    animation: changeGradient 0.8s 1 alternate forwards;
+
+}
+
+.custom_form p:nth-child(7) input:not(:hover) {
+    animation: revertGradient 0.8s 1 alternate forwards;
+}
+
+.nav_menu li:last-child a:hover{
+    animation: changeGradient 0.8s 1 alternate forwards;
+}
+.nav_menu li:last-child a:not(:hover) {
+    animation: revertGradient 0.8s 1 alternate forwards;
+}
+@keyframes changeGradient {
+    0% {
+        background: linear-gradient(0deg, #E522FF -22.1%, #3219FF 101.05%);
+    }
+    3.33% {
+        background: linear-gradient(4.67deg, #E522FF -20.5%, #3219FF 100.293%);
+    }
+    6.67% {
+        background: linear-gradient(9.33deg, #E522FF -19%, #3219FF 99.536%);
+    }
+    10% {
+        background: linear-gradient(14deg, #E522FF -17.5%, #3219FF 98.779%);
+    }
+    13.33% {
+        background: linear-gradient(18.67deg, #E522FF -16%, #3219FF 98.022%);
+    }
+    16.67% {
+        background: linear-gradient(23.33deg, #E522FF -14.5%, #3219FF 97.265%);
+    }
+    20% {
+        background: linear-gradient(28deg, #E522FF -13%, #3219FF 96.508%);
+    }
+    23.33% {
+        background: linear-gradient(31.33deg, #E522FF -11.5%, #3219FF 95.751%);
+    }
+    26.67% {
+        background: linear-gradient(36deg, #E522FF -10%, #3219FF 94.994%);
+    }
+    30% {
+        background: linear-gradient(40.67deg, #E522FF -8.5%, #3219FF 94.237%);
+    }
+    33.33% {
+        background: linear-gradient(45.33deg, #E522FF -7%, #3219FF 93.48%);
+    }
+    36.67% {
+        background: linear-gradient(50deg, #E522FF -5.5%, #3219FF 92.723%);
+    }
+    40% {
+        background: linear-gradient(54.67deg, #E522FF -4%, #3219FF 91.966%);
+    }
+    43.33% {
+        background: linear-gradient(59.33deg, #E522FF -2.5%, #3219FF 91.209%);
+    }
+    46.67% {
+        background: linear-gradient(64deg, #E522FF -1%, #3219FF 90.452%);
+    }
+    50% {
+        background: linear-gradient(68.67deg, #E522FF 0.5%, #3219FF 89.695%);
+    }
+    53.33% {
+        background: linear-gradient(73.33deg, #E522FF 2%, #3219FF 88.938%);
+    }
+    56.67% {
+        background: linear-gradient(78deg, #E522FF 3.5%, #3219FF 88.181%);
+    }
+    60% {
+        background: linear-gradient(82.67deg, #E522FF 5%, #3219FF 87.424%);
+    }
+    63.33% {
+        background: linear-gradient(87.33deg, #E522FF 6.5%, #3219FF 86.667%);
+    }
+    66.67% {
+        background: linear-gradient(92deg, #E522FF 8%, #3219FF 85.91%);
+    }
+    70% {
+        background: linear-gradient(96.67deg, #E522FF 9.5%, #3219FF 85.153%);
+    }
+    73.33% {
+        background: linear-gradient(101.33deg, #E522FF 11%, #3219FF 84.396%);
+    }
+    76.67% {
+        background: linear-gradient(106deg, #E522FF 12.5%, #3219FF 83.639%);
+    }
+    80% {
+        background: linear-gradient(110.67deg, #E522FF 14%, #3219FF 82.882%);
+    }
+    83.33% {
+        background: linear-gradient(115.33deg, #E522FF 15.5%, #3219FF 82.125%);
+    }
+    86.67% {
+        background: linear-gradient(120deg, #E522FF 17%, #3219FF 81.368%);
+    }
+    90% {
+        background: linear-gradient(124.67deg, #E522FF 18.5%, #3219FF 80.611%);
+    }
+    93.33% {
+        background: linear-gradient(129.33deg, #E522FF 20%, #3219FF 79.854%);
+    }
+    96.67% {
+        background: linear-gradient(134deg, #E522FF 21.5%, #3219FF 79.097%);
+    }
+    100% {
+        background: linear-gradient(138.67deg, #E522FF 23%, #3219FF 78.34%);
+    }
+}
+
+
+.contact_popup:not(:hover) {
+    animation: revertGradient 0.8s 1 alternate forwards;
+}
+
+@keyframes revertGradient {
+    0% {
+        background: linear-gradient(138.67deg, #E522FF 23%, #3219FF 78.34%);
+    }
+    /* Процентный шаг: 3.33% */
+    3.33% {
+        background: linear-gradient(134deg, #E522FF 21.5%, #3219FF 79.097%);
+    }
+    /* Процентный шаг: 6.67% */
+    6.67% {
+        background: linear-gradient(129.33deg, #E522FF 20%, #3219FF 79.854%);
+    }
+    /* Процентный шаг: 10% */
+    10% {
+        background: linear-gradient(124.67deg, #E522FF 18.5%, #3219FF 80.611%);
+    }
+    /* Процентный шаг: 13.33% */
+    13.33% {
+        background: linear-gradient(120deg, #E522FF 17%, #3219FF 81.368%);
+    }
+    /* Процентный шаг: 16.67% */
+    16.67% {
+        background: linear-gradient(115.33deg, #E522FF 15.5%, #3219FF 82.125%);
+    }
+    /* Процентный шаг: 20% */
+    20% {
+        background: linear-gradient(110.67deg, #E522FF 14%, #3219FF 82.882%);
+    }
+    /* Процентный шаг: 23.33% */
+    23.33% {
+        background: linear-gradient(106deg, #E522FF 12.5%, #3219FF 83.639%);
+    }
+    /* Процентный шаг: 26.67% */
+    26.67% {
+        background: linear-gradient(101.33deg, #E522FF 11%, #3219FF 84.396%);
+    }
+    /* Процентный шаг: 30% */
+    30% {
+        background: linear-gradient(96.67deg, #E522FF 9.5%, #3219FF 85.153%);
+    }
+    /* Процентный шаг: 33.33% */
+    33.33% {
+        background: linear-gradient(92deg, #E522FF 8%, #3219FF 85.91%);
+    }
+    /* Процентный шаг: 36.67% */
+    36.67% {
+        background: linear-gradient(87.33deg, #E522FF 6.5%, #3219FF 86.667%);
+    }
+    /* Процентный шаг: 40% */
+    40% {
+        background: linear-gradient(82.67deg, #E522FF 5%, #3219FF 87.424%);
+    }
+    /* Процентный шаг: 43.33% */
+    43.33% {
+        background: linear-gradient(78deg, #E522FF 3.5%, #3219FF 88.181%);
+    }
+    /* Процентный шаг: 46.67% */
+    46.67% {
+        background: linear-gradient(73.33deg, #E522FF 2%, #3219FF 88.938%);
+    }
+    /* Процентный шаг: 50% */
+    50% {
+        background: linear-gradient(68.67deg, #E522FF 0.5%, #3219FF 89.695%);
+    }
+    /* Процентный шаг: 53.33% */
+    53.33% {
+        background: linear-gradient(64deg, #E522FF -1%, #3219FF 90.452%);
+    }
+    /* Процентный шаг: 56.67% */
+    56.67% {
+        background: linear-gradient(59.33deg, #E522FF -2.5%, #3219FF 91.209%);
+    }
+    /* Процентный шаг: 60% */
+    60% {
+        background: linear-gradient(54.67deg, #E522FF -4%, #3219FF 91.966%);
+    }
+    /* Процентный шаг: 63.33% */
+    63.33% {
+        background: linear-gradient(50deg, #E522FF -5.5%, #3219FF 92.723%);
+    }
+    /* Процентный шаг: 66.67% */
+    66.67% {
+        background: linear-gradient(45.33deg, #E522FF -7%, #3219FF 93.48%);
+    }
+    /* Процентный шаг: 70% */
+    70% {
+        background: linear-gradient(40.67deg, #E522FF -8.5%, #3219FF 94.237%);
+    }
+    /* Процентный шаг: 73.33% */
+    73.33% {
+        background: linear-gradient(36deg, #E522FF -10%, #3219FF 94.994%);
+    }
+    /* Процентный шаг: 76.67% */
+    76.67% {
+        background: linear-gradient(31.33deg, #E522FF -11.5%, #3219FF 95.751%);
+    }
+    /* Процентный шаг: 80% */
+    80% {
+        background: linear-gradient(28deg, #E522FF -13%, #3219FF 96.508%);
+    }
+    /* Процентный шаг: 83.33% */
+    83.33% {
+        background: linear-gradient(23.33deg, #E522FF -14.5%, #3219FF 97.265%);
+    }
+    /* Процентный шаг: 86.67% */
+    86.67% {
+        background: linear-gradient(18.67deg, #E522FF -16%, #3219FF 98.022%);
+    }
+    /* Процентный шаг: 90% */
+    90% {
+        background: linear-gradient(14deg, #E522FF -17.5%, #3219FF 98.779%);
+    }
+    /* Процентный шаг: 93.33% */
+    93.33% {
+        background: linear-gradient(9.33deg, #E522FF -19%, #3219FF 99.536%);
+    }
+    /* Процентный шаг: 96.67% */
+    96.67% {
+        background: linear-gradient(4.67deg, #E522FF -20.5%, #3219FF 100.293%);
+    }
+    /* Процентный шаг: 100% */
+    100% {
+        background: linear-gradient(0deg, #E522FF -22.1%, #3219FF 101.05%);
+    }
+}
+
+#services {
+    margin-bottom: 180px;
+}
+
+.services_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+}
+
+.services_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 110px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+}
+
+.services_list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.services_item {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    box-shadow: 0px 4px 12px 0px #00000026;
+    padding-bottom: 50px;
+    border-radius: 8px;
+}
+
+.services_item_img_inner {
+    width: 180px;
+    height: 180px;
+    margin-top: -90px;
+}
+
+.services_item_img_inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.services_item_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: linear-gradient(1deg, #E522FF -22.1%, #3219FF 101.05%);
+    background-clip: text;
+    color: transparent;
+}
+
+.services_item_text {
+    display: flex;
+    justify-content: center;
+}
+
+.services_item_text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #241680;
+    width: 80%;
+}
+
+.about_us_slider {
+    /*     background-image: url("http://amatech/wp-content/uploads/2024/02/market.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 140px;
+    transition: background-image 0.5s ease;
+}
+
+.about_us_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about_us_content_sub_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.about_us_content_left, .about_us_content_right {
+    width: 48%;
+}
+
+.about_us_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 110px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: linear-gradient(1deg, #E522FF -22.1%, #3219FF 101.05%);
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+.about_us_text_content_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_us_sub_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    letter-spacing: 0em;
+    color: #fff;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.about_us_text_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+.about_us_text_inner p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #fff;
+
+}
+
+.about_us_text_inner p span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+
+.slider_wrapper {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+
+.slider_img_inner {
+    width: 405px;
+    height: 300px;
+}
+
+.slider_img_inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider_text_inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 0 8%;
+}
+
+.slider_text_inner p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.working_principles {
+    margin-bottom: 140px;
+}
+
+.working_principles_wrapper {
+
+}
+
+.working_principles_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+}
+
+.working_principles_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.working_principles_content_inner {
+    width: 100%;
+}
+
+.work_list {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.work_item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 32%;
+}
+
+.work_item_img_inner{
+    width: 120px;
+    height: 120px;
+}
+.work_item_img_inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.work_item_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-image: linear-gradient(1deg, #E522FF, #3219FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.work_item_text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #241680;
+
+}
+
+#experts {
+    /*background-color: #3219FF;*/
+    background-image: url("http://www.amatech.com.ua/wp-content/uploads/2024/03/Expert_In.svg");
+    position: relative;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 200px 0px;
+    margin-bottom: 200px;
+}
+
+.experts_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+}
+
+.experts_main_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 90px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(1deg, #E522FF, #3219FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /*text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);*/
+}
+
+.experts_content_inner {
+    width: 100%;
+}
+
+.experts_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    row-gap: 40px;
+
+}
+
+
+.experts_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    row-gap: 12px;
+}
+
+.experts_item_gradient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 47px 22px;
+    border-radius: 8px;
+    row-gap: 12px;
+
+}
+
+.experts_item_gradient:hover {
+    background: linear-gradient(344.25deg, #E522FF -22.1%, #3219FF 101.05%);
+    transition: all 5s ease-out;
+
+}
+
+
+.tech_icon_inner {
+    width: 61px;
+    height: 61px;
+    border-radius: 6px;
+}
+
+.tech_icon_inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tech_name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+#team {
+    margin-bottom: 200px;
+}
+
+.team_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+    width: 100%;
+}
+
+.team_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 110px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.our_team_list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.our_team_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+}
+
+.our_team_border {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid #241680;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.our_team_img {
+    width: 128px;
+    height: 128px;
+}
+
+.our_team_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.our_team_name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #241680;
+    margin-bottom: 8px;
+}
+
+.our_team_tech {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #241680;
+}
+
+
+#contact {
+    /*background-color: #241680;*/
+    background-image: url("http://www.amatech.com.ua/wp-content/uploads/2024/03/Expert_In.svg");
+    padding-top: 160px;
+    position: relative;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact_logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-bottom: 24px;
+}
+
+.contact_logo_inner {
+    width: 400px;
+    height: 57px;
+    opacity: .5;
+}
+
+.contact_logo_inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact_logo_slogan {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact_form_sub_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.site_footer {
+    /*background-color: #241680;*/
+    padding: 20px 0;
+    padding-top: 120px;
+}
+
+.custom_form br {
+    display: none;
+}
+
+.custom_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    row-gap: 24px;
+}
+
+.contact_form_form_right {
+    width: 100%;
+}
+
+.custom_form input {
+    padding: 0;
+}
+
+.custom_form input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+    /*background-color: #241680;*/
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 16px 14px;
+    border-radius: 4px;
+    width: 100%;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    color: #fff;
+    outline: none;
+}
+
+input[type="submit"] {
+
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output{
+    display: none;
+}
+
+.custom_form p {
+    width: 49%;
+}
+
+.custom_form p span.wpcf7-not-valid-tip {
+    display: none;
+    position: absolute;
+
+}
+
+.custom_form p span.wpcf7-spinner {
+    display: none;
+    position: absolute;
+}
+
+.popup_form input[type="text"],
+.popup_form input[type="email"],
+.popup_form input[type="tel"],
+.popup_form input[type="password"],
+.popup_form textarea {
+    background-color: #fff;
+    border: 1px solid #241680;
+    color: #241680;
+}
+
+.custom_form p span.wpcf7-not-valid-tip {
+    display: block;
+}
+
+.custom_form p span.wpcf7-spinner {
+    display: block;
+}
+
+.custom_form p:nth-child(6) {
+    margin-right: auto;
+    /*margin-top: -246px;*/
+    left: 0;
+    /*bottom: 95px;*/
+    position: absolute;
+    /*height: 216px;*/
+}
+
+.custom_form p:nth-child(6) textarea {
+    resize: none;
+    height: 210px;
+}
+
+.custom_form p:nth-child(7) {
+    width: 100%;
+}
+
+.custom_form p:nth-child(7) input {
+    width: 100%;
+    background: linear-gradient(344.25deg, #E522FF -22.1%, #3219FF 101.05%);
+    padding: 16px 0;
+    border: unset;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.business {
+    margin-bottom: 24px;
+}
+
+
+.pag_inner {
+    position: absolute;
+    width: 48%;
+    height: 24px;
+    bottom: -40px !important;
+    display: flex;
+    align-items: center;
+    right: 0;
+    z-index: 0;
+}
+
+.slider_pagination {
+    position: unset !important;
+}
+
+.slider_pagination .swiper-pagination-bullet {
+    background: #241680;
+
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+}
+
+.slider_pagination .swiper-pagination-bullet-active {
+    background: linear-gradient(344.25deg, #E522FF -22.1%, #3219FF 101.05%);
+
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.footer_content li {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+
+}
+
+.footer_content li a {
+    color: #fff;
+    text-decoration: none; /* Убираем стандартное подчеркивание */
+    position: relative; /* Необходимо для абсолютного позиционирования */
+}
+
+.footer_content li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.footer_content li:before {
+    position: absolute;
+    content: "";
+    left: -10px;
+    top: 3px;
+    height: 8px;
+    width: 1px;
+    display: flex;
+    background-color: #fff;
+}
+
+
+.blur {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.blur_active {
+    display: flex;
+}
+
+.popup_form {
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 40px 80px;
+    z-index: 3;
+
+}
+
+
+.popup_form .contact_logo_inner {
+    opacity: 1;
+}
+
+.popup_form .contact_logo_slogan {
+    color: #241680;
+}
+
+.popup_form .contact_form_sub_title {
+    color: #241680;
+    margin-bottom: 12px;
+}
+
+.popup_form input[type="text"],
+.popup_form input[type="email"],
+.popup_form input[type="tel"],
+.popup_form input[type="password"],
+.popup_form textarea {
+    background-color: #fff;
+    border: 1px solid #241680;
+}
+
+.popup_form input[type="text"]:focus,
+.popup_form input[type="email"]:focus,
+.popup_form input[type="tel"]:focus,
+.popup_form input[type="password"]:focus,
+.popup_form textarea:focus {
+    background-color: #fff;
+    border: 1px solid #241680;
+    color: #241680;
+}
+
+
+.popup_form input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #241680;
+}
+textarea::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+
+.close_btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.close_btn:before,
+.close_btn:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background-color: #000;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.close_btn:before {
+    transform: rotate(45deg);
+}
+
+.close_btn:after {
+    transform: rotate(-45deg);
+}
+
+.popup_send_mail_inner {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 316px;
+    height: 240px;
+    display: none;
+    position: absolute;
+    z-index: 5;
+}
+
+.popup_send_sub_wrapper {
+    /*padding: 48px 24px 24px 24px;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.img_inner {
+    width: 200px;
+    height: 27px;
+}
+
+.img_inner img {
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+}
+
+.popup_send_text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.popup_send_close_btn {
+    background: linear-gradient(344.25deg, #E522FF -22.1%, #3219FF 101.05%);
+    width: 100%;
+    height: 54px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.popup_send_close_btn span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.popup_send_mail_inner_bot {
+    background-color: #fff;
+    border-radius: 50px;
+    width: 316px;
+    height: 240px;
+    display: none;
+}
+
+.popup_send_mail_inner_bot_active {
+    display: block !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 48px 24px 24px 24px;
+}
+
+.bot_form{
+    display: none;
+}
+
+
+.bot_form_active{
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 48px 24px 24px 24px;
+}
+
+
+.popup_send_mail_inner_active {
+    display: block;
+    padding: 48px 24px 24px 24px;
+}
+
+
+.wpcf7 form.sent .wpcf7-response-output {
+    display: none;
+}
+
+@media screen and (max-width: 997px) {
+    .container {
+        padding: 0 2%;
+
+    }
+
+    .nav_menu li:not(:last-child) {
+        display: none;
+    }
+
+    .services_list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services_item {
+        margin-bottom: 130px;
+        width: 50%;
+    }
+
+    .about_us_slider {
+        min-height: 1100px;
+    }
+
+    .about_us_content_sub_wrapper {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .about_us_content_left, .about_us_content_right {
+        width: 100%;
+    }
+
+    .pag_inner {
+        width: 100%;
+    }
+
+    .our_team_list {
+        flex-wrap: wrap;
+    }
+
+    .our_team_item {
+        width: 49%;
+        margin-bottom: 30px;
+    }
+
+    #contact {
+        padding: 60px 0;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 577px) {
+
+    .experts_item_gradient{
+        padding: 24px 40px 22px;
+    }
+    .hero {
+        min-height: 625px;
+    }
+
+    .hero_main_title {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 39px;
+        margin-bottom: 24px;
+    }
+
+    .hero_cont_text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 29px;
+        margin-bottom: 132px;
+    }
+
+    .contact_popup {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: center;
+        padding: 16px 80px;
+    }
+
+    .services_item {
+        width: 100%;
+    }
+
+    .services_title {
+        font-size: 54px;
+        font-weight: 900;
+        line-height: 66px;
+    }
+
+
+    .work_list {
+        flex-wrap: wrap;
+    }
+
+    .work_item {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .work_item_img_inner {
+        margin-bottom: 24px;
+    }
+
+    .work_item_title {
+        margin-bottom: 12px;
+    }
+
+    .about_us_wrapper {
+        margin: 120px 0;
+    }
+
+    .about_us_text_inner {
+        row-gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .about_us_title {
+        font-size: 54px;
+        font-weight: 900;
+        line-height: 66px;
+        margin-bottom: 50px;
+    }
+
+    .about_us_sub_title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    .about_us_text_inner p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .slider_img_inner {
+        width: 345px;
+        height: 256px;
+    }
+
+    .working_principles_title {
+        font-size: 54px;
+        font-weight: 900;
+        line-height: 54px;
+        text-align: center;
+    }
+
+    .experts_main_title {
+        font-size: 54px;
+        font-weight: 900;
+        line-height: 54px;
+        text-align: center;
+    }
+
+    .experts_item {
+        width: 49%;
+    }
+
+    .team_title {
+        font-size: 54px;
+        font-weight: 900;
+        line-height: 66px;
+        text-align: center;
+    }
+
+    .our_team_item {
+        width: 100%;
+    }
+
+    .contact_logo_inner {
+        width: 300px;
+        height: 41px;
+    }
+
+    .contact_logo {
+        /*         margin-bottom: 40px; */
+        margin-bottom: 20px;
+
+    }
+
+    .contact_logo_slogan {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 51px;
+        text-align: center;
+    }
+
+    .contact_form_sub_title {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .custom_form {
+        padding-top: 330px;
+    }
+
+    .custom_form p {
+        width: 100%;
+    }
+
+    .custom_form p:nth-child(6) {
+        bottom: 400px;
+    }
+
+    .custom_form p:nth-child(7) input {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .about_us_slider {
+    }
+
+    .nav_bar {
+        padding: 15px;
+    }
+
+    .popup_form {
+        padding: 20px 0;
+    }
+
+    .blur_active {
+        overflow: scroll;
+    }
+
+    .close_btn {
+        margin-top: 245px;
+    }
+    @supports (-webkit-overflow-scrolling: touch) {
+        .popup_form {
+            margin-top: 100px;
+        }
+
+        .popup_form .contact_form_sub_title {
+            margin-bottom: 42px;
+        }
+        .custom_form {
+            padding-top: 330px;
+        }
+    }
+}
